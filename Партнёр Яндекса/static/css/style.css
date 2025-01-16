@@ -202,20 +202,21 @@ span {
 
 @font-face {
   font-family: "InterSemiBold";
-  src: url(/static/css/fonts/Inter_28pt-SemiBold.ttf);
+  src: url(../fonts/Inter_28pt-SemiBold.ttf);
 }
 @font-face {
   font-family: "InterBold";
-  src: url(/static/css/fonts/Inter_28pt-Bold.ttf);
+  src: url(../fonts/Inter_28pt-Bold.ttf);
 }
 @font-face {
   font-family: "InterMedium";
-  src: url(/static/css/fonts/Inter_28pt-Medium.ttf);
+  src: url(../fonts/Inter_28pt-Medium.ttf);
 }
 @font-face {
   font-family: "InterRegular";
-  src: url(/static/css/fonts/Inter_28pt-Regular.ttf);
+  src: url(../fonts/Inter_28pt-Regular.ttf);
 }
+
 
 body {
   max-width: 100%;
@@ -605,7 +606,7 @@ video {
 }
 
 .block_2 {
-  background-image: url(/static/css/img/2block.png);
+  background-image: url(../img/2block.png);
   width: 100%;
   padding: min(max(36px, calc(36px + 28 * (100vw - 375px) / 1065)), 64px)
     min(max(16px, calc(16px + 162 * (100vw - 375px) / 1065)), 178px)
@@ -977,7 +978,7 @@ video {
   padding: min(max(36px, calc(36px + 28 * (100vw - 375px) / 1065)), 64px)
     min(max(16px, calc(16px + 162 * (100vw - 375px) / 1065)), 178px)
     min(max(36px, calc(36px + 64 * (100vw - 375px) / 1065)), 100px);
-  background-image: url(/static/css/img/background3.png);
+  background-image: url(../img/background3.png);
   width: 100%;
   place-items: center;
   grid-template-rows: 200px 450px 250px;
@@ -1114,7 +1115,7 @@ video {
   padding: min(max(36px, calc(36px + 28 * (100vw - 375px) / 1065)), 64px)
     min(max(16px, calc(16px + 162 * (100vw - 375px) / 1065)), 178px)
     min(max(36px, calc(36px + 64 * (100vw - 375px) / 1065)), 100px);
-  background-image: url(/static/css/img/Background4.png);
+  background-image: url(../img/Background4.png);
   width: 100%;
 }
 .block_4-block {
