@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Работа Курьером</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/css/css/style.css" />
+  </head>
+  <body>
+    <!-- Шапка сайта -->
+    <header class="header">
+      <div class="header_logo">
+        <div class="logo">
+          <a href="Lead.html">
+            <img
+              src="static/css/img/Logoheader.svg"
+              alt="Логотип Яндекс - Партнёр доставки"
+            />
+          </a>
+        </div>
+      </div>
+      <nav class="header_list">
+        <ul class="header_list-menu">
+          <li><a href="#">О нас</a></li>
+          <li><a href="#advantages">Преимущества</a></li>
+          <li><a href="#Courier">Как стать курьером</a></li>
+          <li><a href="#Calculated">Калькулятор дохода</a></li>
+          <li><a href="#Questions">Вопросы</a></li>
+        </ul>
+      </nav>
+      <div class="header_button">
+        <div class="header_button-item">
+          <div class="header_button-item-txt">
+            <a
+              href="https://reg.eda.yandex.ru/?advertisement_campaign=forms_for_agents&user_invite_code=b3f89163f3cb4f159fe28c7d44d9b4fe&utm_content=blank"
+              class="btn"
+              >Оставить заявку</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="hamburger-menu" id="hamburgerMenu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <nav class="hidden-menu" id="hiddenMenu">
+        <ul>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#advantages">Преимущества</a></li>
+          <li><a href="#Courier">Как стать курьером</a></li>
+          <li><a href="#Calculated">Калькулятор дохода</a></li>
+          <li><a href="#Questions">Вопросы</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="hidden-menu-list">
+      <nav class="hidden-menu-list hidden">
+        <ul class="hidden-menu-item">
+          <li><a href="#About">О нас</a></li>
+          <li><a href="#advantages">Преимущества</a></li>
+          <li><a href="#Courier">Как стать курьером</a></li>
+          <li><a href="#Calculated">Калькулятор дохода</a></li>
+          <li><a href="#Questions">Вопросы</a></li>
+        </ul>
+      </nav>
+    </div>
+    <main>
+      <section class="block_1 anchor">
+        <div class="block_1-video">
+          <video
+            src="/static/css/Video/PromoYandex.mp4"
+            autoplay
+            muted
+            poster="/static/css/img/Video.png"
+          ></video>
+          <video
+            class="shorts"
+            src="/static/css/Video/PromoYandex.mp4"
+            autoplay
+            muted
+            poster="/static/css/img/Video.png"
+          ></video>
+          <div class="block_1-overlay">
+            <div class="block_1-info">
+              <div class="block_1-txt">
+                <h1>
+                  Работа курьером <span class="break-word">в Яндекс Еда</span>
+                </h1>
+                <p>Стань частью нашей команды и получай стабильный доход*</p>
+              </div>
+              <div class="block_1-button">
+                <div class="block_1_button-item">
+                  <a
+                    href="https://reg.eda.yandex.ru/?advertisement_campaign=forms_for_agents&user_invite_code=b3f89163f3cb4f159fe28c7d44d9b4fe&utm_content=blank"
+                  >
+                    Присоединиться
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="block_2 anchor" id="advantages">
+        <div class="block_2-content">
+          <div class="block_2-content-txt">
+            <h2>Почему именно мы?</h2>
+          </div>
+          <div class="block_2-content-card-wrapper">
+            <div class="block_2-content-card">
+              <div class="block_2-content-card-item">
+                <div class="block_2-content-card-img">
+                  <img src="/static/css/img/watch.png" alt="Часы" />
+                </div>
+                <div class="block_2-content-card-lead-txt">
+                  <h3>Гибкий график</h3>
+                </div>
+                <div class="block_2-content-card-txt">
+                  <p>
+                    Работай в удобное время, поддерживай баланс между работой и
+                    отдыхом, выбирай районы и контролируй свой доход — всё это с
+                    минимальным стрессом.
+                  </p>
+                </div>
+              </div>
+              <div class="block_2-content-card-item">
+                <div class="block_2-content-card-img">
+                  <img src="/static/css/img/wallet.png" alt="Кошелёк" />
+                </div>
+                <div class="block_2-content-card-lead-txt">
+                  <h3>Достойный доход</h3>
+                </div>
+                <div class="block_2-content-card-txt">
+                  <p>
+                    Стабильный заработок, прямое влияние на доход,
+                    дополнительные бонусы и чаевые, оптимизация расходов — все
+                    это доступно для любого уровня подготовки!
+                  </p>
+                </div>
+              </div>
+              <div class="block_2-content-card-item">
+                <div class="block_2-content-card-img">
+                  <img src="/static/css/img/handshake.png" alt="Рукопожатие" />
+                </div>
+                <div class="block_2-content-card-lead-txt">
+                  <h3>Поддержка</h3>
+                </div>
+                <div class="block_2-content-card-txt">
+                  <p>
+                    Лёгкий старт, техническая поддержка, консультации по работе,
+                    мотивация и обучения, помощь в экстренных ситуациях и
+                    гарантированная обратная связь. Все, что нужно для вашего
+                    успеха!
+                  </p>
+                </div>
+              </div>
+              <div class="block_2-content-card-item">
+                <div class="block_2-content-card-img">
+                  <img src="/static/css/img/bonus.png" alt="Бонусы" />
+                </div>
+                <div class="block_2-content-card-lead-txt">
+                  <h3>Программа бонусов</h3>
+                </div>
+                <div class="block_2-content-card-txt">
+                  <p>
+                    Получайте дополнительный доход, участвуйте в акциях и
+                    пиковых часах, пользуйтесь бонусами для новичков и гибкими
+                    условиями. А ещё — денежные вознаграждения за приведённых
+                    друзей!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="block_3 anchor" id="Courier">
+        <div class="block_3-lead-txt">
+          <h2>Как стать курьером</h2>
+        </div>
+        <div class="steps-container">
+          <div class="steps-container-block">
+            <div class="step" id="one">
+              <div class="step-number">1</div>
+              <div class="step-text">Зарегистрируйся в сервисе</div>
+            </div>
+            <div class="step" id="two">
+              <div class="step-number">2</div>
+              <div class="step-text">Приди на собеседование</div>
+            </div>
+            <div class="step" id="three">
+              <div class="step-number">3</div>
+              <div class="step-text">Подготовь документы</div>
+            </div>
+            <div class="step" id="four">
+              <div class="step-number">4</div>
+              <div class="step-text">Пройди обучение</div>
+            </div>
+          </div>
+        </div>
+        <div class="block_3-button">
+          <div class="block_3_button-item">
+            <div class="block_3_button-item-txt">
+              <a
+                href="https://reg.eda.yandex.ru/?advertisement_campaign=forms_for_agents&user_invite_code=b3f89163f3cb4f159fe28c7d44d9b4fe&utm_content=blank"
+                class="btn"
+                style="text-decoration: none"
+                >Начни зарабатывать <br />
+                вместе с нами!</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="block_4">
+        <div class="block_4-block">
+          <div class="block_4-window" style="display: none">
+            <div class="block_4-window-img">
+              <img src="/static/css/img/Courier.png" alt="Courier" />
+            </div>
+            <div class="block_4-window-info">
+              <h2>Работа для всех: пешком, на велосипеде или на машине</h2>
+              <p>
+                Начни зарабатывать, как тебе удобно! Выбирай свой способ
+                передвижения и работай курьером с комфортом — мы ценим твою
+                мобильность.
+              </p>
+            </div>
+          </div>
+          <div class="block_4-move">
+            <div class="block_4-move-card">
+              <div class="block_4-move-card-item">
+                <img
+                  src="/static/css/img/walk.png"
+                  alt="Курьер Яндекс Еды на фоне кафе"
+                />
+                <div class="block_4-move-card-item-txt">
+                  <h3>Для пешеходов</h3>
+                  <p>
+                    Идеально для прогулок по городу. Легкий заработок без затрат
+                    на транспорт.
+                  </p>
+                </div>
+                <div class="block_4-button">
+                  <div class="block_4_button-item">
+                    <div class="block_4_button-item-txt">
+                      <a
+                        href="https://reg.eda.yandex.ru/?advertisement_campaign=forms_for_agents&user_invite_code=b3f89163f3cb4f159fe28c7d44d9b4fe&utm_content=blank"
+                        class="btn"
+                        >Стать курьером</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="block_4-move-card-item">
+                <img
+                  src="/static/css/img/bicycle.png"
+                  alt="Курьер Яндекс Еды едет на велосипеде в парке"
+                />
+                <div class="block_4-move-card-item-txt">
+                  <h3>На велосипеде</h3>
+                  <p>
+                    Экономия времени и быстрые доставки. Отличный выбор для
+                    активного образа жизни.
+                  </p>
+                </div>
+                <div class="block_4-button">
+                  <div class="block_4_button-item">
+                    <div class="block_4_button-item-txt">
+                      <a
+                        href="https://reg.eda.yandex.ru/?advertisement_campaign=forms_for_agents&user_invite_code=b3f89163f3cb4f159fe28c7d44d9b4fe&utm_content=blank"
+                        class="btn"
+                        >Стать курьером</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="block_4-move-card-item">
+                <img
+                  src="/static/css/img/car.png"
+                  alt="Машина компании Яндекс Еда"
+                />
+                <div class="block_4-move-card-item-txt">
+                  <h3>На машине</h3>
+                  <p>
+                    Зарабатывай на личном авто, выбирая заказы рядом с домом.
+                  </p>
+                </div>
+                <div class="block_4-button">
+                  <div class="block_4_button-item">
+                    <div class="block_4_button-item-txt">
+                      <a
+                        href="https://reg.eda.yandex.ru/?advertisement_campaign=forms_for_agents&user_invite_code=b3f89163f3cb4f159fe28c7d44d9b4fe&utm_content=blank"
+                        class="btn"
+                        >Стать курьером</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block_4-calculated-block">
+            <div class="block_4-calculated anchor" id="Calculated">
+              <div class="block_4-calculated-lead-txt">
+                <h1>Рассчитай свой доход</h1>
+              </div>
+              <div class="block_4-calculated-leftside">
+                <div class="block_4-calculated-leftside-check">
+                  <div class="block_4-calculated-leftside-check-field">
+                    <p>Рабочие часы в день</p>
+                    <span id="hoursDisplay">8</span>
+                    <!-- Значение будет здесь -->
+                  </div>
+                  <div class="block_4-calculated-leftside-check-scale">
+                    <input
+                      type="range"
+                      min="1"
+                      max="12"
+                      value="8"
+                      id="hoursPerDay"
+                      style="width: 100%"
+                    />
+                  </div>
+                </div>
+                <div class="block_4-calculated-leftside-check">
+                  <div class="block_4-calculated-leftside-check-field">
+                    <p>Рабочие дни в месяц</p>
+                    <span id="daysDisplay">22</span>
+                    <!-- Значение будет здесь -->
+                  </div>
+                  <div class="block_4-calculated-leftside-check-scale">
+                    <input
+                      type="range"
+                      min="1"
+                      max="31"
+                      value="22"
+                      id="daysPerMonth"
+                      style="width: 100%"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="block_4-calculated-leftside-profit"
+                  style="grid-area: f"
+                >
+                  <span>39 000 ₽</span>
+                  <p>Средний доход в месяц</p>
+                </div>
+                <div class="block_4-calculated-leftside-button">
+                  <div class="block_4-calculated-leftside-button-item">
+                    <div class="block_4-calculated-leftside-button-item-txt">
+                      <a
+                        href="https://reg.eda.yandex.ru/?advertisement_campaign=forms_for_agents&user_invite_code=b3f89163f3cb4f159fe28c7d44d9b4fe&utm_content=blank"
+                        class="btn"
+                        >Присоединиться</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="block_4-calculated-leftside-info">
+                  <p>
+                    Указанный доход является средним и рассчитывается на основе
+                    стандартных условий работы. Реальный заработок может
+                    отличаться в зависимости от: выбранного графика работы;
+                    количества выполненных заказов; способа передвижения
+                    (пешком, велосипед, автомобиль); района доставки и
+                    дополнительных бонусов.
+                  </p>
+                  <p>
+                    Мы всегда стремимся предоставить прозрачные условия и помочь
+                    вам заработать максимально комфортно!
+                  </p>
+                </div>
+              </div>
+              <div class="line-vert">
+                <img src="/static/css/img/vert-line.svg" alt="vert-line" />
+              </div>
+              <div class="block_4-calculated-rightside">
+                <div class="block_4-calculated-rightside-choice">
+                  <div
+                    class="block_4-calculated-rightside-choice-field"
+                    id="transportChoice"
+                  >
+                    <p>Выбери способ передвижения</p>
+                    <img src="/static/css/img/arrow.svg" alt="arrow" />
+                  </div>
+                  <ul class="dropdown-menu" id="transportOptions">
+                    <li data-value="on_foot">Пеший курьер</li>
+                    <li data-value="bicycle">Велокурьер</li>
+                    <li data-value="car">На машине</li>
+                  </ul>
+                </div>
+                <div class="block_4-calculated-rightside-choice">
+                  <div
+                    class="block_4-calculated-rightside-choice-field"
+                    id="cityChoice"
+                  >
+                    <p>Выбери свой город</p>
+                    <img src="/static/css/img/arrow.svg" alt="arrow" />
+                  </div>
+                  <ul class="dropdown-menu" id="cityOptions">
+                    <li data-value="abakan">Абакан</li>
+                    <li data-value="adler">Адлер</li>
+                    <li data-value="almaty">Алматы</li>
+                    <li data-value="anapa">Анапа</li>
+                    <li data-value="angarsk">Ангарск</li>
+                    <li data-value="armavir">Армавир</li>
+                    <li data-value="arhangelsk">Архангельск</li>
+                    <li data-value="astana">Астана</li>
+                    <li data-value="astrahan">Астрахань</li>
+                    <li data-value="balahisha">Балашиха</li>
+                    <li data-value="barnaul">Барнаул</li>
+                    <li data-value="belgorod">Белгород</li>
+                    <li data-value="brest">Брест</li>
+                    <li data-value="biysk">Бийск</li>
+                    <li data-value="birobidjan">Биробиджан</li>
+                    <li data-value="blagoveschensk">Благовещенск</li>
+                    <li data-value="bratsk">Братск</li>
+                    <li data-value="bryansk">Брянск</li>
+                    <li data-value="vitsebsk">Витебск</li>
+                    <li data-value="velikiy-novgorod">Великий Новгород</li>
+                    <li data-value="vidnoye">Видное</li>
+                    <li data-value="vladivostok">Владивосток</li>
+                    <li data-value="vladikavkaz">Владикавказ</li>
+                    <li data-value="vladimir">Владимир</li>
+                    <li data-value="volgograd">Волгоград</li>
+                    <li data-value="voljskiy">Волжский</li>
+                    <li data-value="vologda">Вологда</li>
+                    <li data-value="voronezh">Воронеж</li>
+                    <li data-value="vsevolozhsk">Всеволожск</li>
+                    <li data-value="vyborg">Выборг</li>
+                    <li data-value="gatchina">Гатчина</li>
+                    <li data-value="gelendzhik">Геленджик</li>
+                    <li data-value="gomel">Гомель</li>
+                    <li data-value="grodno">Гродно</li>
+                    <li data-value="derbent">Дербент</li>
+                    <li data-value="dzerzhinsk">Дзержинск</li>
+                    <li data-value="dmitrov">Дмитров</li>
+                    <li data-value="dimitrovgrad">Димитровград</li>
+                    <li data-value="dolgoprudny">Долгопрудный</li>
+                    <li data-value="domodedovo">Домодедово</li>
+                    <li data-value="yekaterinburg">Екатеринбург</li>
+                    <li data-value="elabuga">Елабуга</li>
+                    <li data-value="essentuki">Ессентуки</li>
+                    <li data-value="zelenograd">Зеленоград</li>
+                    <li data-value="ivanovo">Иваново</li>
+                    <li data-value="izhevsk">Ижевск</li>
+                    <li data-value="irkutsk">Иркутск</li>
+                    <li data-value="iskitim">Искитим</li>
+                    <li data-value="yoshkar-ola">Йошкар-Ола</li>
+                    <li data-value="kazan">Казань</li>
+                    <li data-value="kaliningrad">Калининград</li>
+                    <li data-value="kaluga">Калуга</li>
+                    <li data-value="kamen-uralskiy">Каменск-Уральский</li>
+                    <li data-value="kemerovo">Кемерово</li>
+                    <li data-value="kirov">Киров</li>
+                    <li data-value="kislovodsk">Кисловодск</li>
+                    <li data-value="kostroma">Кострома</li>
+                    <li data-value="krasnodar">Краснодар</li>
+                    <li data-value="krasnoyarsk">Красноярск</li>
+                    <li data-value="kursk">Курск</li>
+                    <li data-value="lipetsk">Липецк</li>
+                    <li data-value="maykop">Майкоп</li>
+                    <li data-value="mahachkala">Махачкала</li>
+                    <li data-value="minsk">Минск</li>
+                    <li data-value="moscow">Москва</li>
+                    <li data-value="murmansk">Мурманск</li>
+                    <li data-value="novokuznetsk">Новокузнецк</li>
+                    <li data-value="novosibirsk">Новосибирск</li>
+                    <li data-value="norilsk">Норильск</li>
+                    <li data-value="orel">Орел</li>
+                    <li data-value="orenburg">Оренбург</li>
+                    <li data-value="penza">Пенза</li>
+                    <li data-value="perm">Пермь</li>
+                    <li data-value="pskov">Псков</li>
+                    <li data-value="rostov">Ростов-на-Дону</li>
+                    <li data-value="ryazan">Рязань</li>
+                    <li data-value="samara">Самара</li>
+                    <li data-value="st-petersburg">Санкт-Петербург</li>
+                    <li data-value="sevastopol">Севастополь</li>
+                    <li data-value="simferopol">Симферополь</li>
+                    <li data-value="smolensk">Смоленск</li>
+                    <li data-value="sochi">Сочи</li>
+                    <li data-value="stavropol">Ставрополь</li>
+                    <li data-value="surgut">Сургут</li>
+                    <li data-value="syktyvkar">Сыктывкар</li>
+                    <li data-value="tambov">Тамбов</li>
+                    <li data-value="tver">Тверь</li>
+                    <li data-value="togliatti">Тольятти</li>
+                    <li data-value="tomsk">Томск</li>
+                    <li data-value="tula">Тула</li>
+                    <li data-value="tyumen">Тюмень</li>
+                    <li data-value="ufa">Уфа</li>
+                    <li data-value="ulan-ude">Улан-Удэ</li>
+                    <li data-value="ulyanovsk">Ульяновск</li>
+                    <li data-value="khabarovsk">Хабаровск</li>
+                    <li data-value="chelyabinsk">Челябинск</li>
+                    <li data-value="cheboksary">Чебоксары</li>
+                    <li data-value="yaroslavl">Ярославль</li>
+                  </ul>
+                </div>
+                <div class="block_4-calculated-rightside-info">
+                  <p>
+                    Указанный доход является средним и рассчитывается на основе
+                    стандартных условий работы. Реальный заработок может
+                    отличаться в зависимости от: выбранного графика работы;
+                    количества выполненных заказов; способа передвижения
+                    (пешком, велосипед, автомобиль); района доставки и
+                    дополнительных бонусов.
+                  </p>
+                  <p>
+                    Мы всегда стремимся предоставить прозрачные условия и помочь
+                    вам заработать максимально комфортно!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script>
+            document.querySelectorAll(".dropdown-menu li").forEach((item) => {
+              item.addEventListener("click", function () {
+                const parent = this.closest(
+                  ".block_4-calculated-rightside-choice"
+                );
+                const displayElement = parent.querySelector("p");
+                displayElement.textContent = this.textContent;
+                parent.querySelector(".dropdown-menu").style.display = "none";
+              });
+            });
+
+            document
+              .querySelectorAll(".block_4-calculated-rightside-choice")
+              .forEach((choice) => {
+                choice.addEventListener("click", function () {
+                  const menu = this.querySelector(".dropdown-menu");
+                  menu.style.display =
+                    menu.style.display === "block" ? "none" : "block";
+                });
+              });
+          </script>
+        </div>
+      </section>
+      <section class="block_5 anchor" id="Questions">
+        <div class="block_5-block">
+          <div class="block_5-leftside">
+            <div class="block_5-lead-txt">
+              <h2>Часто задаваемые вопросы</h2>
+            </div>
+            <div class="block_5-leftside-questions">
+              <div class="block_5-leftside-questions-item">
+                <p>
+                  Можно ли стать курьером-партнером, если мне ещё нет 18 лет?
+                  <img src="/static/css/img/Plus.svg" alt="Plus" />
+                </p>
+                <div class="answer">
+                  Нет, стать курьером можно только с 18 лет.
+                </div>
+              </div>
+              <div class="block_5-leftside-questions-item">
+                <p>
+                  Какую информацию нужно предоставить для регистрации?
+                  <img src="/static/css/img/Plus.svg" alt="Plus" />
+                </p>
+                <div class="answer">
+                  Нужно предоставить паспортные данные, номер телефона и СНИЛС.
+                </div>
+              </div>
+              <div class="block_5-leftside-questions-item">
+                <p>
+                  Нужно ли проходить медицинское обследование?
+                  <img src="/static/css/img/Plus.svg" alt="Plus" />
+                </p>
+                <div class="answer">
+                  Да, для работы курьером требуется медицинская книжка.
+                </div>
+              </div>
+              <div class="block_5-leftside-questions-item">
+                <p>
+                  Сколько можно заработать в неделю?
+                  <img src="/static/css/img/Plus.svg" alt="Plus" />
+                </p>
+                <div class="answer">
+                  Заработок зависит от количества заказов. В среднем курьеры
+                  зарабатывают от 20 000 до 40 000 рублей в неделю.
+                </div>
+              </div>
+              <div class="block_5-leftside-questions-item">
+                <p>
+                  Можно ли работать курьером на велосипеде?
+                  <img src="/static/css/img/Plus.svg" alt="Plus" />
+                </p>
+                <div class="answer">
+                  Да, можно. Укажите при регистрации, что вы будете работать на
+                  велосипеде.
+                </div>
+              </div>
+              <div class="block_5-leftside-questions-item">
+                <p>
+                  Обеспечивает ли компания форму для работы?
+                  <img src="/static/css/img/Plus.svg" alt="Plus" />
+                </p>
+                <div class="answer">
+                  Да, после регистрации вы получите фирменный рюкзак и куртку.
+                </div>
+              </div>
+              <div class="block_5-leftside-questions-item">
+                <p>
+                  Где я могу посмотреть свой рейтинг и отзывы клиентов?
+                  <img src="/static/css/img/Plus.svg" alt="Plus" />
+                </p>
+                <div class="answer">
+                  Ваш рейтинг и отзывы отображаются в личном кабинете в
+                  приложении курьера.
+                </div>
+              </div>
+              <div class="block_5-leftside-questions-item">
+                <p>
+                  Что делать, если заказ отменили?
+                  <img src="/static/css/img/Plus.svg" alt="Plus" />
+                </p>
+                <div class="answer">
+                  Если заказ отменен, вам будут компенсированы издержки,
+                  связанные с выполнением заказа, в зависимости от условий
+                  отмены.
+                </div>
+              </div>
+              <div class="block_5-leftside-questions-item">
+                <p>
+                  Какое приложение нужно использовать для работы?
+                  <img src="/static/css/img/Plus.svg" alt="Plus" />
+                </p>
+                <div class="answer">
+                  Для работы используйте приложение "Яндекс.Про" (бывший
+                  "Яндекс.Таксометр").
+                </div>
+              </div>
+            </div>
+            <div class="block_5-leftside-button">
+              <div class="block_5-leftside-button-item">
+                <div class="block_5-leftside-button-item-txt">
+                  <a
+                    href="https://reg.eda.yandex.ru/?advertisement_campaign=forms_for_agents&user_invite_code=b3f89163f3cb4f159fe28c7d44d9b4fe&utm_content=blank"
+                    class="btn"
+                    >Стать курьером</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block_5-rightside">
+            <img src="/static/css/img/questions.png" alt="questions" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-block">
+        <div class="footer-block-img">
+          <img src="/static/css/img/futerlogo.svg" alt="futerlogo" />
+        </div>
+        <div class="footer-block-txt">
+          <p>
+            *Настоящий сайт является партнером компании Яндекс Еда и
+            предназначен для привлечения курьеров. Сайт не является официальным
+            ресурсом Яндекс Еда, однако сотрудничает с компанией в рамках
+            программ по поиску и подключению курьеров.
+          </p>
+          <p>
+            ¹Сотрудничество с организациями, оказывающими услуги по доставке
+            заказов, оформленных с помощью сервиса Яндекс Еда, а также прямое
+            сотрудничество с курьерами-прямыми партнерами сервиса Яндекс Еда
+            в статусе самозанятых. Условия и результаты индивидуальны и могут
+            отличаться от указанных. Указан средний показатель дохода
+            по территории РФ на основании данных статистики сервиса Яндекс Еда.
+            Чтобы узнать подробности, отправьте заявку. ²Для курьеров-прямых
+            партнеров сервиса Яндекс Еда в статусе самозанятых. Выплаты
+            за пятницу, субботу, воскресенье производятся в понедельник.
+            По вопросам сроков выплат курьерам, сотрудничающим с партнерами
+            сервиса Яндекс Еда, необходимо обращаться в соответствующую
+            организацию-партнера сервиса Яндекс Еда. ³Страхование вне слотов
+            доступно для прямых самозанятых курьеров, при условии выполнения
+            количества заказов. ⁴Доступно для прямых самозанятых партнеров
+            сервиса при выполнении определенного количества заказов.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="/static/css/script.js"></script>
+
+    <div class="block_3-hierarchy-card" style="display: none">
+      <div class="block_3-hierarchy-card-item">
+        <div class="block_3-hierarchy-card-item-number">
+          <h3>1</h3>
+          <img src="/static/css/img/number.svg" alt="number" />
+        </div>
+        <div class="block_3-hierarchy-card-item-txt">
+          <p>Зарегистрируйся в сервисе</p>
+        </div>
+      </div>
+      <div class="block_3-hierarchy-card-item">
+        <div class="block_3-hierarchy-card-item-number">
+          <h3>2</h3>
+          <img src="/static/css/img/number.svg" alt="number" />
+        </div>
+        <div class="block_3-hierarchy-card-item-txt">
+          <p>Приди на собеседование</p>
+        </div>
+      </div>
+      <div class="block_3-hierarchy-card-item">
+        <div class="block_3-hierarchy-card-item-number">
+          <h3>3</h3>
+          <img src="/static/css/img/number.svg" alt="number" />
+        </div>
+        <div class="block_3-hierarchy-card-item-txt">
+          <p>Подготовь документы</p>
+        </div>
+      </div>
+      <div class="block_3-hierarchy-card-item">
+        <div class="block_3-hierarchy-card-item-number">
+          <h3>4</h3>
+          <img src="/static/css/img/number.svg" alt="number" />
+        </div>
+        <div class="block_3-hierarchy-card-item-txt">
+          <p>Пройди обучение</p>
+        </div>
+      </div>
+    </div>
+    <div class="block_4-calculated-block" style="display: none">
+      <div class="block_4-calculated anchor" id="Calculated">
+        <div class="block_4-calculated-lead-txt">
+          <h1>Рассчитай свой доход</h1>
+        </div>
+        <div class="block_4-calculated-leftside">
+          <div class="block_4-calculated-leftside-check">
+            <div class="block_4-calculated-leftside-check-field">
+              <p>Рабочие часы в день</p>
+              <span>8</span>
+            </div>
+            <div class="block_4-calculated-leftside-check-scale">
+              <img src="/static/css/img/scale.svg" alt="scale" />
+            </div>
+          </div>
+          <div class="block_4-calculated-leftside-check">
+            <div class="block_4-calculated-leftside-check-field">
+              <p>Рабочие часы в месяц</p>
+              <span>8</span>
+            </div>
+            <div class="block_4-calculated-leftside-check-scale">
+              <img src="/static/css/img/scale.svg" alt="scale" />
+            </div>
+          </div>
+          <div class="block_4-calculated-leftside-profit">
+            <span>39 000 ₽</span>
+            <p>Средний доход в месяц</p>
+          </div>
+          <div class="block_4-calculated-leftside-button">
+            <div class="block_4-calculated-leftside-button-item">
+              <div class="block_4-calculated-leftside-button-item-txt">
+                <a
+                  href="https://reg.eda.yandex.ru/?advertisement_campaign=forms_for_agents&user_invite_code=b3f89163f3cb4f159fe28c7d44d9b4fe&utm_content=blank"
+                  class="btn"
+                  >Присоединиться</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="line-vert">
+          <img src="/static/css/img/vert-line.svg" alt="vert-line" />
+        </div>
+        <div class="block_4-calculated-rightside">
+          <div class="block_4-calculated-rightside-choice">
+            <div class="block_4-calculated-rightside-choice-field">
+              <p>Выбери способ передвижения</p>
+              <img src="/static/css/img/arrow.svg" alt="arrow" />
+            </div>
+          </div>
+          <div class="block_4-calculated-rightside-choice">
+            <div class="block_4-calculated-rightside-choice-field">
+              <p>Выбери свой город</p>
+              <img src="/static/css/img/arrow.svg" alt="arrow" />
+            </div>
+          </div>
+          <div class="block_4-calculated-rightside-info">
+            <p>
+              Указанный доход является средним и рассчитывается на основе
+              стандартных условий работы. Реальный заработок может отличаться в
+              зависимости от: выбранного графика работы; количества выполненных
+              заказов; способа передвижения (пешком, велосипед, автомобиль);
+              района доставки и дополнительных бонусов.
+            </p>
+            <p>
+              Мы всегда стремимся предоставить прозрачные условия и помочь вам
+              заработать максимально комфортно!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
