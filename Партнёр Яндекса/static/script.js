@@ -402,6 +402,88 @@ document.addEventListener("DOMContentLoaded", () => {
   blocks.forEach((block) => observer.observe(block));
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const blocks = document.querySelectorAll(".help_info-start");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target); // Останавливаем наблюдение после появления
+        }
+      });
+    },
+    {
+      threshold: 0.1, // Блок виден на 10%
+    }
+  );
+
+  blocks.forEach((block) => observer.observe(block));
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const blocks = document.querySelectorAll(".help_info-support");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target); // Останавливаем наблюдение после появления
+        }
+      });
+    },
+    {
+      threshold: 0.1, // Блок виден на 10%
+    }
+  );
+
+  blocks.forEach((block) => observer.observe(block));
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const blocks = document.querySelectorAll(".feedback-section");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target); // Останавливаем наблюдение после появления
+        }
+      });
+    },
+    {
+      threshold: 0.1, // Блок виден на 10%
+    }
+  );
+
+  blocks.forEach((block) => observer.observe(block));
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const blocks = document.querySelectorAll(".feedback-section:nth-child(3)");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target); // Останавливаем наблюдение после появления
+        }
+      });
+    },
+    {
+      threshold: 0.1, // Блок виден на 10%
+    }
+  );
+
+  blocks.forEach((block) => observer.observe(block));
+});
+
+
+
 function calculateIncome() {
   const dailyHours = parseInt(document.getElementById("hoursPerDay").value, 10);
   const monthlyDays = parseInt(
@@ -434,3 +516,45 @@ document.getElementById("transportChoice").querySelector("p").textContent =
 
 // Пересчитываем доход на старте
 calculateIncome();
+
+
+// Выбираем элементы
+const popup = document.getElementById('popup');
+const targetBlock = document.getElementById('Courier'); // Блок, при достижении которого появляется окно
+
+// Добавляем событие прокрутки
+window.addEventListener('scroll', () => {
+  const targetPosition = targetBlock.getBoundingClientRect().top; // Позиция блока относительно окна
+  const windowHeight = window.innerHeight; // Высота окна браузера
+
+  // Проверяем, достиг ли пользователь нужного блока
+  if (targetPosition < windowHeight && targetPosition > 0) {
+    popup.classList.add('active'); // Показываем окно
+  } else {
+    popup.classList.remove('active'); // Прячем окно
+  }
+});
+
+// Добавляем обработчик клика (по желанию)
+popup.addEventListener('click', () => {
+  const block3 = document.getElementById('.help');
+  block3.scrollIntoView({ behavior: 'smooth' }); // Плавный переход к блоку
+});
+
+// Добавляем событие прокрутки
+window.addEventListener('scroll', () => {
+  const targetPosition = targetBlock.getBoundingClientRect().top; // Позиция блока относительно окна
+  const windowHeight = window.innerHeight; // Высота окна браузера
+
+  // Проверяем, достиг ли пользователь нужного блока
+  if (targetPosition < windowHeight && targetPosition > 0) {
+    popup.classList.add('active'); // Показываем окно
+  } else {
+    popup.classList.remove('active'); // Прячем окно
+  }
+});
+
+// Добавляем обработчик клика для скрытия окна
+popup.addEventListener('click', () => {
+  popup.classList.remove('active'); // Прячем окно
+});
