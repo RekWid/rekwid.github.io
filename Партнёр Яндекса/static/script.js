@@ -60,26 +60,636 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 const hourlyRates = {
-  moscow: {
-    on_foot: 250, // Пеший курьер
-    bicycle: 300, // Велокурьер
-    car: 500, // На машине
+  adler: {
+      on_foot: 247,
+      bicycle: 263,
+      car: 403,
   },
-  spb: {
-    on_foot: 230,
-    bicycle: 280,
-    car: 480,
+  almetyevsk: {
+      on_foot: 263,
+      bicycle: 280,
+      car: 430,
+  },
+  anapa: {
+      on_foot: 247,
+      bicycle: 263,
+      car: 403,
+  },
+  arkhangelsk: {
+      on_foot: 263,
+      bicycle: 280,
+      car: 430,
+  },
+  astrakhan: {
+      on_foot: 263,
+      bicycle: 280,
+      car: 430,
+  },
+  balashiha: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  barnaul: {
+      on_foot: 247,
+      bicycle: 263,
+      car: 403,
+  },
+  belgorod: {
+      on_foot: 263,
+      bicycle: 280,
+      car: 430,
+  },
+  bryansk: {
+      on_foot: 263,
+      bicycle: 280,
+      car: 430,
+  },
+  veliky_novgorod: {
+      on_foot: 247,
+      bicycle: 263,
+      car: 403,
+  },
+  vidnoe: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  vladivostok: {
+      on_foot: 263,
+      bicycle: 280,
+      car: 430,
+  },
+  vladykavkaz: {
+      on_foot: 247,
+      bicycle: 263,
+      car: 403,
+  },
+  vladimir: {
+      on_foot: 263,
+      bicycle: 280,
+      car: 430,
+  },
+  volgograd: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  volzhsky: {
+      on_foot: 247,
+      bicycle: 263,
+      car: 403,
+  },
+  vologda: {
+      on_foot: 263,
+      bicycle: 280,
+      car: 430,
+  },
+  voronezh: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  vsevolozhsk: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  gelendzhik: {
+      on_foot: 247,
+      bicycle: 263,
+      car: 403,
+  },
+  dzerzhinsk: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  dmitrov: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  dolgoprudny: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  domodedovo: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  egoryevsk: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  yekaterinburg: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  zheleznodorozhny: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  zhukovsky: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  zelenograd: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  ivanovo: {
+      on_foot: 263,
+      bicycle: 280,
+      car: 430,
+  },
+  ivanteevka: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  izhevsk: {
+      on_foot: 263,
+      bicycle: 280,
+      car: 430,
+  },
+  irkutsk: {
+      on_foot: 247,
+      bicycle: 263,
+      car: 403,
+  },
+  yoshkar_ola: {
+      on_foot: 247,
+      bicycle: 263,
+      car: 403,
+  },
+  kazan: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  kaliningrad: {
+      on_foot: 247,
+      bicycle: 263,
+      car: 403,
+  },
+  kaluga: {
+      on_foot: 247,
+      bicycle: 263,
+      car: 403,
+  },
+  kemerovo: {
+      on_foot: 247,
+      bicycle: 263,
+      car: 403,
+  },
+  kirov: {
+      on_foot: 247,
+      bicycle: 263,
+      car: 403,
+  },
+  kolomna: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  kolpino: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  korolev: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  kostroma: {
+      on_foot: 263,
+      bicycle: 280,
+      car: 430,
+  },
+  krasnogorsk: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  krasnodar: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  krasnoyarsk: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  kudrovo: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  kursk: {
+      on_foot: 247,
+      bicycle: 263,
+      car: 403,
+  },
+  lipetsk: {
+      on_foot: 263,
+      bicycle: 280,
+      car: 430,
+  },
+  lobnya: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  lyubertsy: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  magnitogorsk: {
+      on_foot: 247,
+      bicycle: 263,
+      car: 403,
+  },
+  maikop: {
+      on_foot: 263,
+      bicycle: 280,
+      car: 430,
+  },
+  moskva: {
+      on_foot: 376,
+      bicycle: 403,
+      car: 618,
+  },
+  murino: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  murmansk: {
+      on_foot: 263,
+      bicycle: 280,
+      car: 430,
+  },
+  mytishchi: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  naberezhnye_chelny: {
+      on_foot: 263,
+      bicycle: 280,
+      car: 430,
+  },
+  nalchik: {
+      on_foot: 247,
+      bicycle: 263,
+      car: 403,
+  },
+  naro_fominsk: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  nizhnevartovsk: {
+      on_foot: 247,
+      bicycle: 263,
+      car: 403,
+  },
+  nizhnekamsk: {
+      on_foot: 247,
+      bicycle: 263,
+      car: 403,
+  },
+  nizhniy_novgorod: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  novokuznetsk: {
+      on_foot: 247,
+      bicycle: 263,
+      car: 403,
+  },
+  novorossiysk: {
+      on_foot: 247,
+      bicycle: 263,
+      car: 403,
   },
   novosibirsk: {
-    on_foot: 200,
-    bicycle: 250,
-    car: 450,
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
   },
+  novyy_urengoy: {
+      on_foot: 263,
+      bicycle: 280,
+      car: 430,
+  },
+  noginsk: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  obninsk: {
+      on_foot: 263,
+      bicycle: 280,
+      car: 430,
+  },
+  odintsovo: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  omsk: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  orel: {
+      on_foot: 247,
+      bicycle: 263,
+      car: 403,
+  },
+  orenburg: {
+      on_foot: 247,
+      bicycle: 263,
+      car: 403,
+  },
+  penza: {
+      on_foot: 247,
+      bicycle: 263,
+      car: 403,
+  },
+  perm: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  petrozavodsk: {
+      on_foot: 263,
+      bicycle: 280,
+      car: 430,
+  },
+  podolsk: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  pskov: {
+      on_foot: 247,
+      bicycle: 263,
+      car: 403,
+  },
+  putilkovo: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  pushkin: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  pushkino: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  pyatigorsk: {
+      on_foot: 247,
+      bicycle: 263,
+      car: 403,
+  },
+  ramenskoe: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  rasskazovka: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  reutov: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  rostov_na_donu: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  ryazan: {
+      on_foot: 263,
+      bicycle: 280,
+      car: 430,
+  },
+  samara: {
+    on_foot: 328,
+    bicycle: 349,
+    car: 538,
+  },
+  sankt_peterburg: {
+      on_foot: 376,
+      bicycle: 403,
+      car: 618,
+  },
+  saransk: {
+      on_foot: 247,
+      bicycle: 263,
+      car: 403,
+  },
+  saratov: {
+      on_foot: 263,
+      bicycle: 280,
+      car: 430,
+  },
+  sergiev_posad: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  serpukhov: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  smolensk: {
+      on_foot: 263,
+      bicycle: 280,
+      car: 430,
+  },
+  solnechnogorsk: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  sochi: {
+      on_foot: 247,
+      bicycle: 263,
+      car: 403,
+  },
+  stavropol: {
+      on_foot: 263,
+      bicycle: 280,
+      car: 430,
+  },
+  stary_oskol: {
+      on_foot: 247,
+      bicycle: 263,
+      car: 403,
+  },
+  sterlitamak: {
+      on_foot: 247,
+      bicycle: 263,
+      car: 403,
+  },
+  stupino: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  surgut: {
+      on_foot: 263,
+      bicycle: 280,
+      car: 430,
+  },
+  syktyvkar: {
+      on_foot: 247,
+      bicycle: 263,
+      car: 403,
+  },
+  taganrog: {
+      on_foot: 263,
+      bicycle: 280,
+      car: 430,
+  },
+  tambov: {
+      on_foot: 263,
+      bicycle: 280,
+      car: 430,
+  },
+  tver: {
+      on_foot: 263,
+      bicycle: 280,
+      car: 430,
+  },
+  tolyatti: {
+      on_foot: 247,
+      bicycle: 263,
+      car: 403,
+  },
+  tomsk: {
+      on_foot: 247,
+      bicycle: 263,
+      car: 403,
+  },
+  troitsk: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  tula: {
+      on_foot: 263,
+      bicycle: 280,
+      car: 430,
+  },
+  tyumen: {
+      on_foot: 263,
+      bicycle: 280,
+      car: 430,
+  },
+  ulyanovsk: {
+      on_foot: 263,
+      bicycle: 280,
+      car: 430,
+  },
+  ufa: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  khabarovsk: {
+      on_foot: 263,
+      bicycle: 280,
+      car: 430,
+  },
+  khanty_mansijsk: {
+      on_foot: 263,
+      bicycle: 280,
+      car: 430,
+  },
+  khimki: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  cheboksary: {
+      on_foot: 247,
+      bicycle: 263,
+      car: 403,
+  },
+  chelyabinsk: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  cherepovets: {
+      on_foot: 263,
+      bicycle: 280,
+      car: 430,
+  },
+  chekhov: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  shushary: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  shchelkovo: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  shcherbinka: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  elektrostal: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  yuzhnoe_butovo: {
+      on_foot: 328,
+      bicycle: 349,
+      car: 538,
+  },
+  yaroslavl: {
+      on_foot: 263,
+      bicycle: 280,
+      car: 430,
+  }
 };
 
 // Переменные для хранения выбранных значений города и транспорта
-let selectedCity = "moscow"; // По умолчанию Москва
-let selectedTransport = "on_foot"; // По умолчанию Пеший курьер
+let selectedCity = "moskva"; // По умолчанию Москва
+let selectedTransport = "car"; // По умолчанию Пеший курьер
 
 // Обработчик для рабочих часов в день
 document
@@ -512,7 +1122,7 @@ document.getElementById("daysDisplay").textContent =
 // Устанавливаем начальные значения для города и транспорта
 document.getElementById("cityChoice").querySelector("p").textContent = "Москва"; // Можно поставить начальный город
 document.getElementById("transportChoice").querySelector("p").textContent =
-  "Пеший курьер"; // Можно поставить начальный транспорт
+  "На машине"; // Можно поставить начальный транспорт
 
 // Пересчитываем доход на старте
 calculateIncome();
@@ -558,3 +1168,8 @@ window.addEventListener('scroll', () => {
 popup.addEventListener('click', () => {
   popup.classList.remove('active'); // Прячем окно
 });
+
+
+
+
+
